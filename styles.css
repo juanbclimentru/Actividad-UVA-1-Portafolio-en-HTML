@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #181a1b;
+    color: #e8e6e3;
+
+}
+
+.menu {
+    background-color: #1A202C;
+    color: #fff;
+    height: 70px;
+ 
+}
+
+.menu__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.menu__links {
+    height: 100%;
+    transition: transform .5s;
+    display: flex;
+}
+
+.menu__item {
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);
+    --transform: rotate(-90deg);
+}
+
+.menu__item:hover {
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    --transform: rotate(0);
+}
+
+.menu__link {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+   
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    width: 150px;
+    justify-content: center;
+}
+
+.menu__link:hover {
+    background-color: #5e7094;
+}
+ 
+ .menu__link::after {
+    content: ''; /* Crea un pseudo-elemento vacío */
+    position: absolute; /* Posiciona absolutamente dentro del elemento padre */
+    left: 50%; /* Empieza desde el centro */
+    bottom: 0; /* Posición inferior */
+    width: 0; /* Ancho inicial es 0 para que no se vea */
+    height: 2px; /* Altura del subrayado */
+    background-color: #c73030; /* Color del subrayado */
+    transition: all 0.3s ease; /* Transición suave para el efecto */
+}
+.menu__link:hover::after {
+    left: 0; /* Extiende hacia la izquierda */
+    width: 100%; /* Se extiende a todo el ancho del enlace */
+}
+
+.menu__arrow {
+    transform: var(--transform);
+    transition: transform .3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.menu__nesting {
+    list-style: none;
+    transition: clip-path .3s;
+    clip-path: var(--clip);
+    position: absolute;
+   right: 20px;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: #1A202C;
+    width: 100px;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu__link--inside {
+    padding: 30px 100px 30px 20px;
+}
+
+.menu__link--inside:hover {
+    background-color: #798499;
+}
+
+.menu__hamburguer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu__img {
+    display: block;
+    width: 36px;
+}
+
+/* ================================================================================================= */
+.banner {
+    text-align: center;
+}
+
+
+.presentation {
+   
+   margin-top: 20px; 
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+
+.about p{
+     font-size: 20px;
+     width:250px;
+}
+.profile{
+    justify-content: top;
+    margin: 0px 0px 0px 200px;
+}
+.img_profile {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.about {
+    width: 200px;
+}
+
+/* =============================================================================================================== */
+.experience {
+width: 60%;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+gap: 20px;
+}
+.experience h2{
+display: flex;
+justify-content: center;
+font-size: 50px;
+}
+
+.experience_block{
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 100px;
+}
+.experience_block img{
+width: 40%;
+max-width: 300px;
+height: auto;
+}
+.experience_ind {
+width: 600px;
+display: flex;
+flex: 1;
+flex-direction: column;
+}
+.experience_ind h2{
+text-align: center;
+font-size: 40px ;
+
+}
+.experience_ind h3, .experience_ind h4 {
+font-size: 30px;
+padding: 0px 5px 0px 10px;
+}
+
+.experience_ind p{
+font-size: 20px;
+padding: 0px 5px 0px 10px;
+}
+#job, #academic{
+display: flex;
+justify-content: space-between;
+margin-bottom: 20px;
+justify-content: center;
+}
+
+
+
+.socialMedia {
+    padding: 0px;
+
+}
+
+.socialMedia a {
+    padding-top: 100px;
+    margin: 0px 10px;
+    width: 30px;
+    color: #fff;
+
+}
+
+
+
+
+@media (max-width:800px) {
+    .menu__hamburguer {
+        display: flex;
+    }
+
+    .menu__item {
+        --clip: 0;
+        overflow: hidden;
+    }
+
+    .menu__item--active {
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
+
+    .menu__item--show {
+        background-color: var(--background);
+    }
+
+
+    .menu__links {
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show {
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link {
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting {
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu__link--inside {
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+}

@@ -4,42 +4,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://kit.fontawesome.com/4d4e7abfc3.js" crossorigin="anonymous"></script>
     <title>Juan B Climent</title>
 </head>
 
 <body>
-    <ul>
-        <li>
-            <a href="index.html" class="menu__link">Home</a>
-        </li>
-        <li>
-            <a href="aboutMe.html" class="menu__link">Sobre mi</a>
-        </li>
-        <li>
-            <a href="skills.html" class="menu__link">Habilidades</a>
-        </li>
-        <li>
-            <a href="CV.html" class="menu__link">Experiencia</a>
-        </li>
-        <li>
-            <a href="portafolio.html" class="menu__link">Portafolio</a>
-        </li>
-    </ul>
+    <header>
+        <nav class="menu">
+            <section class="menu__container">
+
+
+                <ul class="menu__links">
+                    <li class="menu__item">
+                        <a  href="#" class="menu__link">Sobre mi</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link">Habilidades</a>
+                    </li>
+                    <li class="menu__item">
+                        <a  href="#" class="menu__link">Experiencia</a>
+                    </li>
+                    <li class="menu__item">
+                        <a  href="#" class="menu__link">Portafolio</a>
+                    </li>
+                    <li class="menu__item">
+                        <a  href="#" class="menu__link">Contacto</a>
+                    </li>
+
+                  <!--   <li class="menu__item">
+                        <a href="#" class="menu__link">
+                            <ul class=" menu_option_dark_mode">
+                                <li class="switch_dark">
+                                    <i class="fa-solid fa-moon border"></i>
+                                    <i class="fa-sharp fa-solid fa-sun border "></i>
+                                </li>
+                            </ul>
+                        </a>
+                    </li> -->
+            </section>
+        </nav>
+    </header>
     <main>
-        <div>
-            <h1>Juan Bautista Climent</h1>
-            <h2></h2>
-            <h2>Soy desarrollador web enfocado en el Back-End con PHP, JavaScript y SQL vivo en zona oeste, y estoy estudiando Gestión de Tecnología de la Información, actualmente estoy trabajando en Thinkion como Customer Service Analyst</h2>
+        <div class="banner"></div>
+            <h2>PHP JavaScript SQL</h2>
 
         </div>
-        <img src="./img/fotoPerfil.jpg" alt="" width="300px" height="200px">
+        <div class="presentation">
+            <div class="about">
+                <p>Me apasiona aprender nuevas tecnologías y ampliar mis habilidades de desarrollo web. Actualmente estoy cursando la carrera de ingeniería informática y me estoy especializando en back-end con PHP, Node.js, SQL, phpMyAdmin y Laravel, pero tambien cuento con conocimientos en HTML, CSS, Boostrap, MVC y el manejo de repositorio con Github. Estoy en la búsqueda de una empresa donde me permita, aportar y seguir desarrollándome profesionalmente, tanto en modalidad híbrida como remota.</p>
+            </div>
+            <div class="profile">
+                <h3>Juan Bautista Climent</h3>
+                <img class="img_profile" src="img/img_profile.jpeg" alt="">
+            </div>
+        </div>
+        <div class="experience">
+            <h2>Experiencia</h2>
+            <div class="experience_block">
+                <img src="img/img_work.png" alt="">
+                <div class="experience_ind" id="job">
+                  
+                    <div class="experience_ind">
+                        <h3>Customer Service Analyst</h3>
+                        <h4>Thinkion</h4>
+                        <p>Diciembre 2023</p>
+                        <p>JSON, SQL, phpMyAdmin</p>
+                    </div>
+                    <div class="experience_ind">
+                        <h3>Técnico en Control de calidad</h3>
+                        <h4>Novatech S.A</h4>
+                        <p>Agosto 2016 - Octubre 2016</p>
+                        <p>Controlar instalación del sistema operativo, Comprobación de circuitos electrónicos, Optimizar posibles fallas en fabricación</p>
+                    </div>
+                    <div class="experience_ind">
+                        <h3>Pasantía</h3>
+                        <h4>Gulf Oil Argentina</h4>
+                        <p>Junio 2014 - Noviembre 2014</p>
+                        <p>Mantenimiento preventivo, Mantenimiento correctivo,  Optimizar procesos productivos</p>
+                    </div>
+                </div>
+            </div>
+            <h2>Formación académica</h2>
+            <div class="experience_block">
+                <div class="experience_ind" id="academic">
+                    <div class="experience_ind">
+                       
+                        <h3  >Ingeniería informática</h3>
+                        <h4>Universidad de Palermo</h4>
+                        <p>Agosto 2023 - Actualidad"</p>
+                        <p>Cursando actualmente el primer año de la carrera</p>
+                        <div class="experience_ind">
+                            <h3>PHP Developer</h3>
+                            <h4>Argentina Programa 4.0</h4>
+                            <p>Mayo 2023 - Noviembre 2023 Graduado</p>
+                            <p>Manejo de PHP, Html, CSS, Laravel, SQl y Boostrap, creación de una pagina web, Creación de una base de datos con phpMyAdmin</p>
+                        </div>
+                        <div class="experience_ind">
+                            <h3>Desarrollo Web Full Stack</h3>
+                            <h4>Digital House</h4>
+                            <p>Junio 2022 - Diciembre 2022 Graduado</p>
+                            <p>Creación de una página web de cero con Node.js, metodología MVC, phpMyAdmin, HTML, CSS y SQL,manejo de Github y control de versiones</p>
+                        </div>
+                        <div class="experience_ind">
+                            <h3>Secundaria</h3>
+                            <h4>Escuela Técnica Alemana Moreno</h4>
+                            <p>Finalizada en Diciembre de 2014</p>
+                            <p>Graduado con título de Técnico Electromecánico</p>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/img_study.png" alt="">
+            </div>
+
+
+            <br><br><br><br>
+        </div>
     </main>
     <footer>
-        <div>
-            <a href="https://www.linkedin.com/in/juanbcliment/">Linkedin: linkedin.com/in/juanbcliment/</a><br>
-            <a href="https://github.com/juanbcliment">Github: github.com/juanbcliment</a><br>
-            <a href="https://wa.me/541167474160">Cel: +541167474160</a><br>
-            <a href="mailto:juanbclimentru@gmail.com">Mail: juanbclimentru@gmail.com</a>
+        <div class="socialMedia">
+            <a href="https://www.linkedin.com/in/juanbcliment/"><i class="fab fa-linkedin fa-2xl"></i></a>
+            <a href="https://github.com/juanbcliment"><i class="fa-brands fa-square-github fa-2xl"></i></a>
+            <a href="https://wa.me/541167474160"><i class="fa-brands fa-square-whatsapp fa-2xl"></i>+541167474160</a>
+            <a href="mailto:juanbclimentru@gmail.com"><i
+                    class="fa-solid fa-envelope fa-2xl"></i>juanbclimentru@gmail.com</a>
+
         </div>
     </footer>
 </body>
