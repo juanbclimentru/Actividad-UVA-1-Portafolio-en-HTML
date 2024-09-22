@@ -19,7 +19,7 @@ body {
 
 .menu {
     background-color: #1A202C;
-    color: #fff;
+    color: #e8e6e3;
     height: 70px;
  
 }
@@ -72,18 +72,18 @@ body {
 }
  
  .menu__link::after {
-    content: ''; /* Crea un pseudo-elemento vacío */
-    position: absolute; /* Posiciona absolutamente dentro del elemento padre */
-    left: 50%; /* Empieza desde el centro */
-    bottom: 0; /* Posición inferior */
-    width: 0; /* Ancho inicial es 0 para que no se vea */
-    height: 2px; /* Altura del subrayado */
-    background-color: #c73030; /* Color del subrayado */
-    transition: all 0.3s ease; /* Transición suave para el efecto */
+    content: ''; 
+    position: absolute; 
+    left: 50%; 
+    bottom: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: #c73030; 
+    transition: all 0.3s ease; 
 }
 .menu__link:hover::after {
-    left: 0; /* Extiende hacia la izquierda */
-    width: 100%; /* Se extiende a todo el ancho del enlace */
+    left: 0; 
+    width: 100%; 
 }
 
 .menu__arrow {
@@ -131,42 +131,46 @@ body {
     width: 36px;
 }
 
-/* ================================================================================================= */
+/* =============================================SOBRE MI==================================================== */
 .banner {
     text-align: center;
 }
 
-
 .presentation {
-   
-   margin-top: 20px; 
+    margin-top: 40px;
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     padding: 50px;
+    padding-left: 150px;
+    margin-left: 150px;
 }
 
-.about p{
-     font-size: 20px;
-     width:250px;
+.about {
+    width: 55%; /* Aumentar el ancho del texto */
 }
-.profile{
-    justify-content: top;
-    margin: 0px 0px 0px 200px;
+
+.profile {
+    width: 25%; /* Reducir el ancho del contenedor de la imagen */
+    margin-right: 150px;/* Eliminar margen extra para acercar la imagen */
 }
+
+.about p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
 .img_profile {
     margin-top: 20px;
     width: 200px;
     height: 200px;
     border-radius: 100%;
+    flex-shrink: 0; /* Evita que la imagen se encoja */
 }
 
-.about {
-    width: 200px;
-}
 
-/* =============================================================================================================== */
+/* =================================================EXPIRIENCE============================================================== */
 .experience {
 width: 60%;
 display: flex;
@@ -175,9 +179,8 @@ margin: 0 auto;
 gap: 20px;
 }
 .experience h2{
-display: flex;
-justify-content: center;
-font-size: 50px;
+padding: 0px 5px 0px 10px;
+font-size: 40px;
 }
 
 .experience_block{
@@ -187,23 +190,20 @@ justify-content: space-between;
 gap: 100px;
 }
 .experience_block img{
-width: 40%;
-max-width: 300px;
+width: 500px;
+max-width: 600px;
 height: auto;
 }
 .experience_ind {
-width: 600px;
+
+width: 500px;
 display: flex;
 flex: 1;
 flex-direction: column;
 }
-.experience_ind h2{
-text-align: center;
-font-size: 40px ;
 
-}
 .experience_ind h3, .experience_ind h4 {
-font-size: 30px;
+font-size: 25px;
 padding: 0px 5px 0px 10px;
 }
 
@@ -211,6 +211,7 @@ padding: 0px 5px 0px 10px;
 font-size: 20px;
 padding: 0px 5px 0px 10px;
 }
+
 #job, #academic{
 display: flex;
 justify-content: space-between;
@@ -218,8 +219,107 @@ margin-bottom: 20px;
 justify-content: center;
 }
 
+.separator {
+    border-left: 1px solid #ccc;
+ /*  height: 1080px; */
+  height: 550px;
+    position: absolute;
+    left: 50%;
+    z-index: -1;
+  }
+/* =====================================================HABILIDADES=============================================================  */
+.habilidades{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    font-size: 25px;    
+    gap: 80px;
+    margin: 0 auto;
+}
+.habilidades > div {
+    padding: 20px;
+}
+.habilidades > div h3 {
+    margin-bottom: 10px; 
+}
+
+.habilidades > div ul {
+    margin-left: 25px; 
+    list-style-type: disc; 
+}
+
+.habilidades > div ul li {
+    margin-bottom: 5px; 
+}
+
+/* =======================================================PORTFOLIO============================================================= */
+#portafolio-section {
+    width: 70%;
+    margin-top: 50px;
+    padding: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#portafolio-section h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#portafolio-section ul {
+    list-style-type: none; /* Quitar las viñetas */
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Alinear el texto a la izquierda */
+    margin-bottom: 40px; /* Espacio entre los proyectos */
+}
+
+#portafolio-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#portafolio-section p {
+    margin-bottom: 10px; /* Separación entre párrafos y el link */
+    line-height: 1.6; /* Mejorar la legibilidad del texto */
+}
+
+#portafolio-section a {
+    font-weight: bold;
+    color: #e8e6e3;; /* Color del link */
+    text-decoration: none;
+}
+
+#portafolio-section a:hover {
+    text-decoration: underline;
+}
+
+#portafolio-section img {
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 10px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#portafolio-section img:hover {
+    transform: scale(4); /* Aumentar tamaño al 110% */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra para efecto de profundidad */
+}
 
 
+/* ========================================================FOOTER================================================================= */
+footer{
+    background-color: #1A202C;
+    color: #e8e6e3;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+}
 .socialMedia {
     padding: 0px;
 
@@ -230,13 +330,73 @@ justify-content: center;
     margin: 0px 10px;
     width: 30px;
     color: #fff;
+    text-decoration: none;
 
 }
 
 
+@media (max-width: 1000px) {
+    .presentation {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .about p {
+        font-size: 16px;
+    }
 
-@media (max-width:800px) {
+    .img_profile {
+        width: 120px;
+        height: 120px;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile{
+        width: 400px;
+        padding-left: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .about, .profile {
+        width: 100%;
+        margin: 0;
+    }
+
+    .about p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .img_profile {
+        width: 150px;
+        height: 150px;
+    }
+
+    .experience_block {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .experience_block img {
+        display: none;
+    }
+
+    .experience_ind {
+        width: 100%;
+    }
     .menu__hamburguer {
         display: flex;
     }
@@ -299,5 +459,60 @@ justify-content: center;
         width: 90%;
         margin-left: auto;
         border-left: 1px solid #798499;
+    }
+    #portafolio-section h3 {
+        font-size: 24px;
+    }
+
+    #portafolio-section ul li {
+        font-size: 16px;
+    }
+
+    #portafolio-section img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .presentation {
+        padding: 10px;
+    }
+
+    .about p {
+        font-size: 16px;
+    }
+
+    .img_profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    .experience_block {
+        gap: 30px;
+    }
+
+    .experience h2 {
+        font-size: 30px;
+    }
+
+    .experience_ind h3, .experience_ind h4 {
+        font-size: 20px;
+    }
+
+    .experience_ind p {
+        font-size: 16px;
+    }
+
+    footer {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .socialMedia a {
+        margin: 0 5px;
+        font-size: 20px;
     }
 }
