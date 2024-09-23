@@ -29,6 +29,10 @@
                     <li class="menu__item">
                         <a href="#contacto-section" class="menu__link">Contacto</a>
                     </li>
+                </ul>
+                <div class="menu__hamburguer">
+                    <img src="img/menu.svg" class="menu__img">
+                </div>
 
             </section>
         </nav>
@@ -117,61 +121,72 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="separator"> </div>  -->
                     <img class="experience_ind" src="img/img_study.png" alt="">
+                    <!-- <div class="separator"> </div>  -->
                     <br><br><br><br>
                 </div>
             </div>
         </section>
-        <div id="habilidades-section" class="habilidades">
-            <div>
-                <h3>Habilidades Técnicas</h3>
+        <section id="habilidades-section">
+            <br><br><br><br><br><br>
+            <div id="habilidades-section" class="habilidades">
+                <div>
+                    <h3>Habilidades Técnicas</h3>
+                    <ul>
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                        <li>Laravel</li>
+                        <li>Git</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Boostrap</li>
+                        <li>Linux</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Competencias</h3>
+                    <ul>
+                        <li>Comunicación</li>
+                        <li>Organización</li>
+                        <li>Trabajo en equipo</li>
+                        <li>Resolución de problemas</li>
+                        <li>Iniciativa</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="portafolio-section">
+            <div id="portafolio-section">
+                <h3>Cuento con 2 proyectos individuales y 1 grupal</h3>
                 <ul>
-                    <li>PHP</li>
-                    <li>Node.js</li>
-                    <li>Laravel</li>
-                    <li>Git</li>
-                    <li>SQL</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Boostrap</li>
-                    <li>Linux</li>
-                    <li>Python</li>
+                    <li>
+                        <p>Primer proyecto grupal con Digital House, un eCommerce de comida ahumada, todo el backedn se
+                            hizo con Node.js, Express y de base de datos phpMyAdmin</p>
+                    </li>
+                    <li><a href="https://github.com/juanbcliment/Weiss">Link al repositorio</a></li>
+                    <img src="./img/weiss.png" alt="" width="300px" height="200px">
+                </ul><br><br><br>
+                <ul>
+                    <li>
+                        <p>Primer proyecto individual, un registro automotor para revisar las multas y los dominios de
+                            los vehículos.
+                            El sitio Web se hizo con Laravel y phpMyAdmin
+                        </p>
+                    </li>
+                    <li><a href="https://github.com/juanbcliment/RegistroAutomotor_Laravel">Link al GitHub</a></li>
+                    <img src="./img/Automotor.png" alt="" width="300px" height="200px">
+                </ul><br><br><br>
+                <ul>
+                    <li>
+                        <p>Segundo proyecto individual, CRUD con PHP y mysqli utilizando phpMyAdmin</p>
+                    </li>
+                    <li><a href="https://github.com/juanbcliment/CRUD-con-PHP">Link al repositorio</a></li>
+                    <img src="./img/crud.png" alt="" width="300px" height="200px">
                 </ul>
             </div>
-            <div>
-                <h3>Competencias</h3>
-                <ul>
-                    <li>Comunicación</li>
-                    <li>Organización</li>
-                    <li>Trabajo en equipo</li>
-                    <li>Resolución de problemas</li>
-                    <li>Iniciativa</li>
-                </ul>
-            </div>
-        </div>
-        <div id="portafolio-section">
-            <h3>Cuento con 2 proyectos individuales y 1 grupal</h3>
-        <ul>
-            <li><p>Primer proyecto grupal con Digital House, un eCommerce de comida ahumada, todo el backedn se hizo con Node.js, Express y de base de datos phpMyAdmin</p></li>
-            <li><a href="https://github.com/juanbcliment/Weiss">Link al repositorio</a></li>
-            <img src="./img/weiss.png" alt="" width="300px" height="200px">
-        </ul><br><br><br>
-        <ul>
-           <li><p>Primer proyecto individual, un registro automotor para revisar las multas y los dominios de los vehículos.
-            El sitio Web se hizo con Laravel y phpMyAdmin
-           </p></li>
-           <li><a href="https://github.com/juanbcliment/RegistroAutomotor_Laravel">Link al GitHub</a></li>
-           <img src="./img/Automotor.png" alt="" width="300px" height="200px">
-        </ul><br><br><br>
-        <ul>
-            <li><p>Segundo proyecto individual, CRUD con PHP y mysqli utilizando phpMyAdmin</p></li>
-            <li><a href="https://github.com/juanbcliment/CRUD-con-PHP">Link al repositorio</a></li>
-            <img src="./img/crud.png" alt="" width="300px" height="200px">
-        </ul>
-
-
-        </div>
+        </section>
     </main>
     <footer>
         <section id="contacto-section">
@@ -184,7 +199,8 @@
                     juanbclimentru@gmail.com</a>
             </div>
         </section>
-    </footer>
+    </footer> 
+    <script src="dropdown.js"></script>
 </body>
 
 </html>

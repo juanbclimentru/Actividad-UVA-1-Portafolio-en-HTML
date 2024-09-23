@@ -12,13 +12,13 @@ header{
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #181a1b;
+    background-color: #1A202C;
     color: #e8e6e3;
 
 }
 
 .menu {
-    background-color: #1A202C;
+    background-color: #283756;
     color: #e8e6e3;
     height: 70px;
  
@@ -310,7 +310,7 @@ justify-content: center;
 
 /* ========================================================FOOTER================================================================= */
 footer{
-    background-color: #1A202C;
+    background-color: #283756;
     color: #e8e6e3;
     height: 70px;
     display: flex;
@@ -398,6 +398,7 @@ footer{
         width: 100%;
     }
     .menu__hamburguer {
+        color: #ccc;
         display: flex;
     }
 
