@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-header{
+header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #1A202C;
@@ -21,7 +22,7 @@ body {
     background-color: #283756;
     color: #e8e6e3;
     height: 70px;
- 
+
 }
 
 .menu__container {
@@ -58,7 +59,7 @@ body {
     color: #fff;
     text-decoration: none;
     text-align: center;
-   
+
     display: flex;
     height: 100%;
     align-items: center;
@@ -70,20 +71,21 @@ body {
 .menu__link:hover {
     background-color: #5e7094;
 }
- 
- .menu__link::after {
-    content: ''; 
-    position: absolute; 
-    left: 50%; 
-    bottom: 0; 
-    width: 0; 
-    height: 2px; 
-    background-color: #c73030; 
-    transition: all 0.3s ease; 
+
+.menu__link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #c73030;
+    transition: all 0.3s ease;
 }
+
 .menu__link:hover::after {
-    left: 0; 
-    width: 100%; 
+    left: 0;
+    width: 100%;
 }
 
 .menu__arrow {
@@ -98,7 +100,7 @@ body {
     transition: clip-path .3s;
     clip-path: var(--clip);
     position: absolute;
-   right: 20px;
+    right: 20px;
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
@@ -132,28 +134,35 @@ body {
 }
 
 /* =============================================SOBRE MI==================================================== */
-.banner {
+main {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.titulo {
     text-align: center;
+    color: #fff;
+    font-size: 30px;
+    margin: 40px;
 }
 
 .presentation {
+    width: 40%;
     margin-top: 40px;
     text-align: center;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 50px;
-    padding-left: 150px;
-    margin-left: 150px;
+    margin: 0 auto;
+
+
 }
 
 .about {
-    width: 55%; /* Aumentar el ancho del texto */
+    width: 60%;
 }
 
 .profile {
-    width: 25%; /* Reducir el ancho del contenedor de la imagen */
-    margin-right: 150px;/* Eliminar margen extra para acercar la imagen */
+    width: 40%;
 }
 
 .about p {
@@ -166,150 +175,138 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    flex-shrink: 0; /* Evita que la imagen se encoja */
+    flex-shrink: 0;
+    /* Evita que la imagen se encoja */
 }
 
 
 /* =================================================EXPIRIENCE============================================================== */
 .experience {
-width: 60%;
-display: flex;
-flex-direction: column;
-margin: 0 auto;
-gap: 20px;
-}
-.experience h2{
-padding: 0px 5px 0px 10px;
-font-size: 40px;
-}
-
-.experience_block{
-display: flex;
-align-items: center;
-justify-content: space-between;
-gap: 100px;
-}
-.experience_block img{
-width: 500px;
-max-width: 600px;
-height: auto;
-}
-.experience_ind {
-
-width: 500px;
-display: flex;
-flex: 1;
-flex-direction: column;
-}
-
-.experience_ind h3, .experience_ind h4 {
-font-size: 25px;
-padding: 0px 5px 0px 10px;
-}
-
-.experience_ind p{
-font-size: 20px;
-padding: 0px 5px 0px 10px;
-}
-
-#job, #academic{
-display: flex;
-justify-content: space-between;
-margin-bottom: 20px;
-justify-content: center;
-}
-
-.separator {
-    border-left: 1px solid #ccc;
- /*  height: 1080px; */
-  height: 550px;
-    position: absolute;
-    left: 50%;
-    z-index: -1;
-  }
-/* =====================================================HABILIDADES=============================================================  */
-.habilidades{
+    width: 90%;
     display: flex;
-    justify-content: center;
-    width: 70%;
-    font-size: 25px;    
-    gap: 80px;
+    flex-direction: column;
     margin: 0 auto;
+   
+    }
+    .experience h2{
+    padding: 0px 5px 0px 10px;
+    font-size: 40px;
+    }
+    
+    .experience_block{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    width: 50%;
+    margin: 0 auto;
+    }
+    .experience_block img{
+    width: 500px;
+    max-width: 600px;
+    height: auto;
+    }
+    .experience_ind {
+    
+    width: 500px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    }
+    
+    .experience_ind h3, .experience_ind h4 {
+    font-size: 25px;
+    padding: 0px 5px 0px 10px;
+    }
+    
+    .experience_ind p{
+    font-size: 20px;
+    padding: 0px 5px 0px 10px;
+    }
+    
+    #job, #academic{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    justify-content: center;
+    }
+    
+  
+
+/* =====================================================HABILIDADES=============================================================  */
+
+#habilidades-section {
+    margin-top: 80px;
+    width: 70%;
+    display: flex;
+    font-size: 25px;
+    margin: 0 auto;
+
 }
-.habilidades > div {
+
+.habilidades>div {
+    width: 45%;
     padding: 20px;
 }
-.habilidades > div h3 {
-    margin-bottom: 10px; 
+
+.habilidades>div h3 {
+    margin-bottom: 10px;
 }
 
-.habilidades > div ul {
-    margin-left: 25px; 
-    list-style-type: disc; 
+.habilidades>div ul {
+    margin-left: 25px;
+    list-style-type: disc;
 }
 
-.habilidades > div ul li {
-    margin-bottom: 5px; 
+.habilidades>div ul li {
+    margin-bottom: 5px;
 }
 
 /* =======================================================PORTFOLIO============================================================= */
 #portafolio-section {
-    width: 70%;
-    margin-top: 50px;
-    padding: 40px;
-    text-align: center;
-    margin: 0 auto;
+    margin-bottom: 80px;
 }
 
 #portafolio-section h3 {
-    font-size: 30px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
 }
 
-#portafolio-section ul {
-    list-style-type: none; /* Quitar las viñetas */
-    margin: 0;
-    padding: 0;
-    text-align: left; /* Alinear el texto a la izquierda */
-    margin-bottom: 40px; /* Espacio entre los proyectos */
+.row {
+    width: 70%;
+    display: flex;
+    padding: 5px;
+    margin: 0 auto;
 }
 
-#portafolio-section ul li {
-    font-size: 18px;
-    margin-bottom: 10px;
+.img-container {
+    position: relative;
 }
 
-#portafolio-section p {
-    margin-bottom: 10px; /* Separación entre párrafos y el link */
-    line-height: 1.6; /* Mejorar la legibilidad del texto */
+.img-container {
+    position: relative;
+    margin: 0 auto;
 }
 
-#portafolio-section a {
-    font-weight: bold;
-    color: #e8e6e3;; /* Color del link */
-    text-decoration: none;
-}
-
-#portafolio-section a:hover {
-    text-decoration: underline;
-}
-
-#portafolio-section img {
-    margin-top: 10px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.img-container img {
+    padding: 10px;
     display: block;
-    margin: 10px auto;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 400px;
+    height: 400px;
 }
-#portafolio-section img:hover {
-    transform: scale(4); /* Aumentar tamaño al 110% */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumentar la sombra para efecto de profundidad */
+
+.img-container a {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
 }
+
 
 
 /* ========================================================FOOTER================================================================= */
-footer{
+footer {
     background-color: #283756;
     color: #e8e6e3;
     height: 70px;
@@ -320,6 +317,7 @@ footer{
     margin: 0 auto;
     justify-content: center;
 }
+
 .socialMedia {
     padding: 0px;
 
@@ -333,6 +331,87 @@ footer{
     text-decoration: none;
 
 }
+
+
+
+@media (max-width: 1600px) {
+    .experience{
+        width: 90%;
+    }
+   
+    .experience_block {
+       margin: 0 auto;
+      
+      
+    }
+    .experience_block img {
+        width: 45%;
+        margin: 0 auto;
+      
+
+     }
+     .experience_block > div {
+        width: 45%;
+        margin: 50px;
+      
+     }
+   
+    .presentation {
+        width: 80%;
+    }
+    .row{
+        width: 80%;
+    }
+    #job, #academic{
+       /*  width: 50%; */
+        }
+}
+
+@media (max-width: 1440px) {
+    .experience_block {
+        width: 50%;
+        height: 50rem;
+       
+  
+    }
+  /*   .experience_block img {
+        position: relative; 
+        max-width: 50%; 
+        margin: 0 auto; 
+      }
+     */
+    .experience {
+        width: 80%;
+      
+    }
+    #job, #academic{
+         width: 50%; 
+         }
+    .experience_ind h2 {
+     font-size: 30px;
+    }
+    .experience_ind h3 {
+        font-size: 25px;
+       }
+       .experience_ind h4 {
+        font-size: 20px;
+       }
+       .experience_ind p {
+        font-size: 18px;
+       }
+    .presentation {
+        width: 80%;
+    }
+    #habilidades-section{
+        width: 80%;
+    }
+    .row{
+        width: 80%;
+    }
+
+    
+}
+
 
 
 @media (max-width: 1000px) {
@@ -353,7 +432,8 @@ footer{
         align-items: center;
         justify-content: center;
     }
-    .profile{
+
+    .profile {
         width: 400px;
         padding-left: 100px;
         display: flex;
@@ -361,6 +441,15 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .row{
+        width: 90%;
+    }
+    .img-container img {
+        padding: 5px;
+        width: 200px;
+        height: 200px;
+    }
+    
 }
 
 @media (max-width: 800px) {
@@ -370,7 +459,8 @@ footer{
         padding: 20px;
     }
 
-    .about, .profile {
+    .about,
+    .profile {
         width: 100%;
         margin: 0;
     }
@@ -384,19 +474,26 @@ footer{
         width: 150px;
         height: 150px;
     }
+    .experience{
+        width: 90%;
 
+    }
     .experience_block {
         flex-direction: column;
-        gap: 50px;
+        width: 90%;
     }
 
     .experience_block img {
         display: none;
+    
     }
 
     .experience_ind {
         width: 100%;
+        margin: 0 auto;
+        pad: 0;
     }
+
     .menu__hamburguer {
         color: #ccc;
         display: flex;
@@ -461,6 +558,7 @@ footer{
         margin-left: auto;
         border-left: 1px solid #798499;
     }
+
     #portafolio-section h3 {
         font-size: 24px;
     }
@@ -473,14 +571,34 @@ footer{
         width: 100%;
         height: auto;
     }
+    #habilidades-section{
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #job, #academic{
+        width: 80%;
+    }
+    .row{
+        flex-direction: column;
+    }
 }
 
 /* Media queries para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
     .presentation {
-        padding: 10px;
+       width: 90%;
     }
-
+    .profile {
+        padding: 0;
+        width: 50%;
+        margin: 0 auto;
+    }
+    .experience {
+        width: 90%;
+        flex-direction: column;
+        margin: 0 auto;
+    }
     .about p {
         font-size: 16px;
     }
@@ -498,7 +616,8 @@ footer{
         font-size: 30px;
     }
 
-    .experience_ind h3, .experience_ind h4 {
+    .experience_ind h3,
+    .experience_ind h4 {
         font-size: 20px;
     }
 
