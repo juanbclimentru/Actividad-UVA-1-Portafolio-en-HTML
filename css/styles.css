@@ -103,11 +103,19 @@ main {
 
 #habilidades-section {
     margin-top: 80px;
-    width: 70%;
+    width: 100%;
     display: flex;
     font-size: 25px;
     margin: 0 auto;
 
+}
+.habilidades {
+    display: flex;
+    align-items: unset;
+    margin: 10px;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-evenly;
 }
 
 .habilidades>div {
