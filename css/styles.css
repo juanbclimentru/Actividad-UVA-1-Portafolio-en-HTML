@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =============================================SOBRE MI==================================================== */
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.titulo {
+    text-align: center;
+    color: #0c0c0c;
+    font-size: 30px;
+    margin: 40px;
+}
+
+.presentation {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.profile {
+    width: 50%;
+    text-align: center;
+}
+
+.about {
+    width: 50%;
+    margin-right: 100px;
+}
+
+
+
+.about p {
+    font-size: 20px;
+
+}
+
+.img_profile {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    flex-shrink: 0;
+
+}
+
+
+/* =================================================EXPIRIENCE============================================================== */
+.experience {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
+
+.experience h2 {
+    padding: 0px 5px 0px 10px;
+    font-size: 40px;
+}
+
+.experience_block {
+    display: flex;
+    align-items: unset;
+    margin: 10px;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+
+
+.experience_ind h3,
+.experience_ind h4 {
+    font-size: 25px;
+    padding: 0px 5px 0px 10px;
+}
+
+.experience_ind p {
+    font-size: 20px;
+    padding: 0px 5px 0px 10px;
+}
+
+#job,
+#academic {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+
+/* =====================================================HABILIDADES=============================================================  */
+
+#habilidades-section {
+    margin-top: 80px;
+    width: 70%;
+    display: flex;
+    font-size: 25px;
+    margin: 0 auto;
+
+}
+
+.habilidades>div {
+    width: 45%;
+    padding: 20px;
+}
+
+.habilidades>div h3 {
+    margin-bottom: 10px;
+}
+
+.habilidades>div ul {
+    margin-left: 25px;
+    list-style-type: disc;
+}
+
+.habilidades>div ul li {
+    margin-bottom: 5px;
+}
+
+/* =======================================================PORTFOLIO============================================================= */
+#portafolio-section {
+    margin-bottom: 80px;
+}
+
+#portafolio-section h3 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.row {
+    width: 70%;
+    display: flex;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-container {
+    position: relative;
+    margin: 0 auto;
+}
+
+.img-container img {
+    padding: 10px;
+    display: block;
+    width: 400px;
+    height: 400px;
+}
+
+.img-container a {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+@media (max-width: 1045px) {
+      /* ============== EXPERIENCIA ================== */
+      .experience_ind h3,
+      .experience_ind h4 {
+          font-size: 18px;
+      }
+       
+      .experience h2 {
+         font-size: 25px;
+      }
+      .experience_ind p {
+       font-size: 16px;
+      }
+}
+
+@media (max-width: 800px) {
+
+    /* =============== SOBRE MI ====================== */
+    main {
+        width: 90%;
+        margin: 0 auto;
+      
+    }
+
+    .about {
+        margin: 0;
+    }
+
+    .about p {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .profile h3 {
+        font-size: 18px;
+    }
+
+    .img_profile {
+        margin-top: 20px;
+        width: 125px;
+        height: 125px;
+        border-radius: 100%;
+        flex-shrink: 0;
+
+    }
+
+      /* ============== EXPERIENCIA ================== */
+      .experience_ind h3,
+      .experience_ind h4 {
+          font-size: 14px;
+      }
+       
+      .experience h2 {
+         font-size: 22px;
+      }
+      .experience_ind p {
+       font-size: 14px;
+      }
+}
+
+
+@media (max-width: 480px) {
+    /* navbar */
+    .menu__hamburguer {
+
+        display: flex;
+    }
+
+    .menu__item--active {
+        --transform: rotate(0);
+        --background: #5e7094;
+    }
+
+    .menu__item--show {
+        background-color: var(--background);
+    }
+
+
+    .menu__links {
+        margin: 0;
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #000;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show {
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link {
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting {
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+
+    .menu__link--inside {
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+
+ 
+    /* SOBRE MI */
+    .titulo {
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+
+    }
+
+    .about {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .about p {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .profile {
+        text-align: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+       /* ============== EXPERIENCIA ================== */
+       .footer_experiencia {
+       
+        position: relative;
+    }
+       body {
+        height: 100%;  /* Asegura que el body ocupe toda la altura */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+       main{
+        flex: 1;
+       width: 95%;
+       }
+       .experience {
+        flex-direction: column;
+        display: flex;
+        position: relative;
+        height: auto;
+    
+        
+       }
+       .experience_ind h3,
+       .experience_ind h4 {
+           font-size: 14px;
+       }
+        
+       .experience h2 {
+          font-size: 22px;
+       }
+       .experience_ind p {
+        font-size: 14px;
+       }
+
+}
