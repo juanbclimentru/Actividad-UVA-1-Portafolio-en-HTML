@@ -203,14 +203,14 @@ body.active_dark .img-container a {
     border: 2px solid #e8e6e3;
     color: #e8e6e3;
 }
-/* =========================================================== MARCADO DE NAVBAR =====================================================  */
-.nav_experiencia, .nav_portfolio,.nav_habilidades, .nav_sobremi  {
+/* =========== MARCADO DE NAVBAR =====================================================  */
+.nav_experiencia, .nav_portfolio,.nav_habilidades, .nav_sobremi, .nav_contacto {
     background-color: #5e7094;    
     border-bottom: 2px solid red;
     padding-bottom: 5px;  
 }
 
-/* ======================================================================0 FOOTER ==============================================================*/
+/* ========FOOTER ==============================================================*/
 
 footer {
 

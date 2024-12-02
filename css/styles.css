@@ -5,7 +5,7 @@
 }
 
 
-/* =============================================SOBRE MI==================================================== */
+/* ================INDEX==================================================== */
 main {
     width: 80%;
     margin: 0 auto;
@@ -19,6 +19,7 @@ main {
 }
 
 .presentation {
+    width: 70%;
     text-align: left;
     display: flex;
     flex-direction: row;
@@ -29,16 +30,10 @@ main {
     width: 50%;
     text-align: center;
 }
-
-.about {
-    width: 50%;
-    margin-right: 100px;
-}
-
-
-
 .about p {
     font-size: 20px;
+    
+    
 
 }
 
@@ -50,9 +45,15 @@ main {
     flex-shrink: 0;
 
 }
-
-
-/* ========================EXPIRIENCE============================================================== */
+/* sobre mi */
+.aboutMe {
+    font-size: 20px;
+}
+.presentationME
+{
+    margin-top: 100px;
+}
+/* =================EXPIRIENCE============================================================== */
 #experiencia-section{
   
 }
@@ -101,10 +102,11 @@ main {
 }
 
 
-/* ====================HABILIDADES=============================================================  */
+/* =================HABILIDADES=============================================================  */
 
 #habilidades-section {
-    margin-top: 80px;
+ 
+    padding-top: 50px;
     width: 100%;
     display: flex;
     font-size: 25px;
@@ -139,7 +141,7 @@ main {
     margin-bottom: 5px;
 }
 
-/* =======================================================PORTFOLIO============================================================= */
+/* =============PORTFOLIO============================================================= */
 .main-portfolio {
     width: 80%;
 }
@@ -212,10 +214,15 @@ main {
 
 }
 
+/* ccontactame  */
+form{
+    display: flex;
+    flex-direction: column;
+}
 
 @media (max-width: 1045px) {
 
-    /* ============== EXPERIENCIA ================== */
+    /* ============ EXPERIENCIA ================== */
     .experience_ind h3,
     .experience_ind h4 {
         font-size: 18px;
@@ -265,7 +272,7 @@ main {
 
 @media (max-width: 800px) {
 
-    /* =============== SOBRE MI ====================== */
+    /* ============= SOBRE MI ====================== */
     main {
         width: 90%;
         margin: 0 auto;
@@ -294,18 +301,21 @@ main {
 
     }
 
-    /* ============== EXPERIENCIA ================== */
+    /* ============ EXPERIENCIA ================== */
     .experience_ind h3,
     .experience_ind h4 {
         font-size: 14px;
     }
 
     .experience h2 {
-        font-size: 22px;
+        font-size: 17px;
     }
 
     .experience_ind p {
         font-size: 14px;
+    }
+    .experience{
+        margin-bottom: 20px;
     }
 
     /* PORTFOLIO */
@@ -356,7 +366,16 @@ main {
 
 @media (max-width: 480px) {
 
-
+/* sobre mi */
+.aboutMe {
+    width: 90%;
+    font-size: 18px;
+   margin-left: 10px;
+}
+.presentationME
+{
+    margin-top: 10px;
+}
 
     /* SOBRE MI */
     .titulo {
@@ -491,7 +510,10 @@ main {
     flex-direction: column;
     margin: 0 auto;
     padding: 0;
-   
-  
+}
+#habilidades-section {
+    padding-top: 20px;
+    margin: 0 auto;
+    padding-left: 30px;
 }
 }
