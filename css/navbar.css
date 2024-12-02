@@ -192,6 +192,17 @@ body.active_dark footer a {
 
     color: #e8e6e3;
 }
+body.active_dark main section div div div{
+
+    color: #e8e6e3;
+}
+body.active_dark .img-container  {
+    border: 2px solid #e8e6e3;
+}
+body.active_dark .img-container a {
+    border: 2px solid #e8e6e3;
+    color: #e8e6e3;
+}
 /* =========================================================== MARCADO DE NAVBAR =====================================================  */
 .nav_experiencia, .nav_portfolio,.nav_habilidades, .nav_sobremi  {
     background-color: #5e7094;    

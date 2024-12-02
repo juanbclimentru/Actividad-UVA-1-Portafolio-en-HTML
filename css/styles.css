@@ -52,7 +52,10 @@ main {
 }
 
 
-/* =================================================EXPIRIENCE============================================================== */
+/* ========================EXPIRIENCE============================================================== */
+#experiencia-section{
+  
+}
 .experience {
     display: flex;
     flex-direction: row;
@@ -62,7 +65,7 @@ main {
 
 .experience h2 {
     padding: 0px 5px 0px 10px;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .experience_block {
@@ -78,12 +81,12 @@ main {
 
 .experience_ind h3,
 .experience_ind h4 {
-    font-size: 25px;
+    font-size: 20px;
     padding: 0px 5px 0px 10px;
 }
 
 .experience_ind p {
-    font-size: 20px;
+    font-size: 18px;
     padding: 0px 5px 0px 10px;
 }
 
@@ -98,8 +101,7 @@ main {
 }
 
 
-
-/* =====================================================HABILIDADES=============================================================  */
+/* ====================HABILIDADES=============================================================  */
 
 #habilidades-section {
     margin-top: 80px;
@@ -109,6 +111,7 @@ main {
     margin: 0 auto;
 
 }
+
 .habilidades {
     display: flex;
     align-items: unset;
@@ -140,29 +143,25 @@ main {
 .main-portfolio {
     width: 80%;
 }
+
 #portafolio-section {
- 
-   
+
+
     display: flex;
     flex-direction: column;
-}
-
-#portafolio-section h3 {
-    text-align: center;
-    font-size: 25px;
 }
 
 
 .img-container {
     width: 100%;
-   display: flex;
-   flex-direction: row;
+    display: flex;
+    flex-direction: row;
     border: 2px solid black;
     padding: 20px 30px;
     border-radius: 20px;
     margin: 0 auto;
     justify-content: space-evenly;
-  
+    margin-top: 10px;
 }
 
 
@@ -173,40 +172,95 @@ main {
     width: 400px;
     height: 200px;
     border-radius: 20px;
-    
+
 }
 
 .img-container a {
 
     bottom: 0;
-  
+
     width: 100%;
     padding: 10px;
     font-size: 20px;
 }
 
 .texto-encima {
-
+    margin-top: 25px;
     color: #000;
     display: flex;
     flex-direction: column;
 }
 
+.texto-encima a {
+    margin-top: 40px;
+    text-decoration: none;
+    border: #000 solid 2px;
+    width: 40px;
+    border-radius: 10px;
+    padding: 0;
+    color: #000;
+}
+
+.texto-encima a p {
+    margin: 0 auto;
+
+}
+
+.texto-encima p {
+    margin-top: 10px;
+    width: 80%;
+
+}
 
 
 @media (max-width: 1045px) {
-      /* ============== EXPERIENCIA ================== */
-      .experience_ind h3,
-      .experience_ind h4 {
-          font-size: 18px;
-      }
-       
-      .experience h2 {
-         font-size: 25px;
-      }
-      .experience_ind p {
-       font-size: 16px;
-      }
+
+    /* ============== EXPERIENCIA ================== */
+    .experience_ind h3,
+    .experience_ind h4 {
+        font-size: 18px;
+    }
+
+    .experience h2 {
+        font-size: 25px;
+    }
+
+    .experience_ind p {
+        font-size: 16px;
+    }
+
+    /* PORTFOLIO */
+    .main-portfolio {
+        width: 90%;
+    }
+
+    .img-container {
+        padding: 10px 15px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    .img-container img {
+        padding: 10px;
+        display: block;
+        width: 350px;
+        height: 170px;
+        border-radius: 20px;
+
+    }
+
+    .texto-encima p {
+        margin-top: 6px;
+        width: 90%;
+        font-size: 15px;
+
+    }
+
+    .texto-encima a {
+        margin-top: 10px;
+        width: 30px;
+
+    }
 }
 
 @media (max-width: 800px) {
@@ -215,7 +269,7 @@ main {
     main {
         width: 90%;
         margin: 0 auto;
-      
+
     }
 
     .about {
@@ -240,85 +294,70 @@ main {
 
     }
 
-      /* ============== EXPERIENCIA ================== */
-      .experience_ind h3,
-      .experience_ind h4 {
-          font-size: 14px;
-      }
-       
-      .experience h2 {
-         font-size: 22px;
-      }
-      .experience_ind p {
-       font-size: 14px;
-      }
+    /* ============== EXPERIENCIA ================== */
+    .experience_ind h3,
+    .experience_ind h4 {
+        font-size: 14px;
+    }
+
+    .experience h2 {
+        font-size: 22px;
+    }
+
+    .experience_ind p {
+        font-size: 14px;
+    }
+
+    /* PORTFOLIO */
+    .main-portfolio {
+        width: 90%;
+    }
+
+    .img-container {
+        padding: 0px 10px;
+        height: 150px;
+        margin-top: 15px;
+    }
+
+    .img-container img {
+        padding: 10px;
+        display: block;
+        width: 200px;
+        height: 130px;
+        border-radius: 20px;
+
+    }
+
+    .texto-encima h3 {
+        padding: 0;
+
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .texto-encima p {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        font-size: 12px;
+
+    }
+
+    .texto-encima a {
+        margin-top: 5px;
+        width: 30px;
+    }
+
+    .texto-encima {
+        margin-top: 15px;
+    }
 }
 
 
 @media (max-width: 480px) {
-    /* navbar */
-    .menu__hamburguer {
-
-        display: flex;
-    }
-
-    .menu__item--active {
-        --transform: rotate(0);
-        --background: #5e7094;
-    }
-
-    .menu__item--show {
-        background-color: var(--background);
-    }
 
 
-    .menu__links {
-        margin: 0;
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #000;
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        transform: translateX(100%);
-    }
 
-    .menu__links--show {
-        transform: unset;
-        width: 100%;
-    }
-
-    .menu__link {
-        padding: 25px 0;
-        padding-left: 30px;
-        height: auto;
-    }
-
-    .menu__arrow {
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .menu__nesting {
-        display: grid;
-        position: unset;
-        width: 100%;
-        transform: translateY(0);
-        height: 0;
-        transition: height .3s;
-    }
-
-    .menu__link--inside {
-        width: 90%;
-        margin-left: auto;
-        border-left: 1px solid #798499;
-    }
-
- 
     /* SOBRE MI */
     .titulo {
         margin: 10px;
@@ -341,6 +380,7 @@ main {
         text-align: center;
         justify-content: center;
         margin: 0 auto;
+        font-size: 12px;
     }
 
     .profile {
@@ -348,40 +388,110 @@ main {
         justify-content: center;
         margin: 0 auto;
     }
-       /* ============== EXPERIENCIA ================== */
-       .footer_experiencia {
-       
+
+    /* ============== EXPERIENCIA ================== */
+    .footer_experiencia {
+
         position: relative;
     }
-       body {
-        height: 100%;  /* Asegura que el body ocupe toda la altura */
+
+    body {
+        height: 100%;
+        /* Asegura que el body ocupe toda la altura */
         margin: 0;
         padding: 0;
         display: flex;
         flex-direction: column;
     }
-       main{
+
+    main {
         flex: 1;
-       width: 95%;
-       }
-       .experience {
+        width: 95%;
+    }
+
+    .experience {
         flex-direction: column;
         display: flex;
         position: relative;
         height: auto;
-    
-        
-       }
-       .experience_ind h3,
-       .experience_ind h4 {
-           font-size: 14px;
-       }
-        
-       .experience h2 {
-          font-size: 22px;
-       }
-       .experience_ind p {
-        font-size: 14px;
-       }
 
+
+    }
+
+    .experience_ind h3,
+    .experience_ind h4 {
+        font-size: 14px;
+    }
+
+    .experience h2 {
+        font-size: 22px;
+    }
+
+    .experience_ind p {
+        font-size: 14px;
+    }
+
+
+
+    /* PORTFOLIO */
+    .footer_experiencia {
+
+        position: relative;
+    }
+
+    .main-portfolio {
+        width: 90%;
+    }
+
+    .img-container {
+        flex-direction: column;
+        padding: 0px 10px;
+        height: 225px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .img-container img {
+        padding: 10px;
+        display: block;
+        width: 270px;
+        height: 120px;
+        border-radius: 20px;
+        align-items: center;
+        margin: 0 auto;
+
+    }
+
+    .texto-encima h3 {
+        padding: 0;
+        font-size: 16px;
+        margin: 0;
+    }
+
+    .texto-encima p {
+        padding: 0;
+        margin: 0;
+        width: 90%;
+        font-size: 10px;
+
+    }
+
+    .texto-encima a {
+        margin-top: 5px;
+        width: 30px;
+    }
+
+    .texto-encima {
+        margin-top: 15px;
+        align-items: center;
+    }
+
+    /* habilidades */
+.habilidades{
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 0;
+   
+  
+}
 }
