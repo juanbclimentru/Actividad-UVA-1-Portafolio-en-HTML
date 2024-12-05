@@ -366,7 +366,7 @@ footer {
         transform: translateY(0);
         height: 0;
         transition: height .3s;
-    }
+    } .border
 
     .menu__link--inside {
         width: 90%;
