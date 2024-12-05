@@ -377,7 +377,8 @@ footer {
     /* ============================= FOOTER */
     footer {
         height: 320px;
-
+        margin-top: 15px;
+        position: relative;
 
     }
 
