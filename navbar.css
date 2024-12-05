@@ -376,15 +376,16 @@ footer {
 
     /* ============================= FOOTER */
     footer {
-        height: 320px;
+        height: 290px;
         margin-top: 15px;
-        position: relative;
+        position: unset;
 
     }
 
     .socialMedia {
         display: flex;
         flex-direction: column;
+        font-size: 16px;
     }
 
     .socialMedia a {
