@@ -351,6 +351,7 @@ footer {
         padding: 25px 0;
         padding-left: 30px;
         height: auto;
+        width: 100px;
     }
 
     .menu__arrow {
@@ -375,7 +376,8 @@ footer {
 
     /* ============================= FOOTER */
     footer {
-        height: auto;
+        height: 320px;
+
 
     }
 
